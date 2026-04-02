@@ -3,3 +3,4 @@ icons/
 logos/
 *.html
 *.pdf
+*-out.csv

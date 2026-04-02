@@ -65,7 +65,8 @@ class AgencyAmtrak(Agency):
         before init_from_feed.
         """
         # This is defined in its own file in the Amtrak subpackage.
-        return gtfs_patches.patch_feed(feed)
+        # return gtfs_patches.patch_feed(feed)
+        return feed
 
     def patch_feed_wheelchair_access_only(self, feed: FeedEnhanced) -> FeedEnhanced:
         """Apply only the patches to add wheelchair boarding information for Amtrak;

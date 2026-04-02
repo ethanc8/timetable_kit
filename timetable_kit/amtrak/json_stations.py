@@ -298,6 +298,7 @@ def download_all_stations(sleep_secs: float = 120.0):
 
     # Then, cycle through the station codes
     # This line just works!
+    print(stations_json)
     stations = pd.io.json.read_json(StringIO(stations_json), orient="records")
     for code in stations["code"].to_list():
         download_one_station(code)
